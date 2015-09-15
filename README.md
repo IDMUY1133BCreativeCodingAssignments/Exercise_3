@@ -1,1 +1,2 @@
-# Exercise_3
+### Exercise 3: Repetition: Modularity, Pattern 
+Using 1 form/shape and create 3 different grid patterns. Consider different rhythms that you can make with spacing, direction/orientation and repetition. Have fun, and experiment! 
