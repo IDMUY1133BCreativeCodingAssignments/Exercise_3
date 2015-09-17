@@ -27,16 +27,16 @@ for( int x=60; x<= width-60; x+= 25){
      ellipse(x,y,20,20);
     }// end of y
 }// end of x
- }
+ } // end of else if
  
  else if (click == 3){
 ///Option 3:small circles
   for( int x=60; x<= width-60; x+= 25){
    for( int y=60; y<= height-60; y+= 25){
       ellipse(x,y,5,5);
-   }
-  }
- }  
+   } // end of y
+  } // end of x
+ }  // end of else if
 }// end of draw function
 
 void keyPressed(){
