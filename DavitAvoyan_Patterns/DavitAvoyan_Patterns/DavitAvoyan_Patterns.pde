@@ -33,11 +33,12 @@ void draw() {  //inititates the looping function
     for(int x = 50; x <= (width-80); x+= 40) {  //reprinting across width
       for(int y = 50; y <= (height-80); y+= 20) { 
         //reprinting across height
-        if(diversity == 0);{  //first print this rectangle
+        if(diversity == 0){  //first print this type of rectangle
           rect(x, y, 40, 20);
-          diversity++;} //if
-        if(diversity > 0){  //then this, interchangeably
-          rect(x+10, y-5, 20, 40);
+          diversity++; } //if
+          
+        else if(diversity == 1){  //then this
+          rect(x+10, y-15, 20, 40);
           diversity = 0;} //if
           
       } //y
@@ -57,7 +58,8 @@ void draw() {  //inititates the looping function
           orient++;
         } //if
         
-        if(orient == 2){ //this angle of the arc will print once and reset
+        if(orient == 2){  //this is deliberately not else if
+                          //this angle of the arc will print once and reset                        
           fill(255);  //fill the second type of arch
           arc(x-5, y-5, 10, 20, 0, 2*PI);         
           orient = 0;
